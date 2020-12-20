@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+</head>
+
+<body style="background-color: #f3f2ef;">
+  <style>
+    .material-spinner {
+      height: 50px;
+      min-height: 50px;
+      width: 50px;
+      border-radius: 100px;
+      border: 5px transparent solid;
+      border-top: 5px #3F51B5 solid;
+
+      animation: material-spinner 4s infinite;
+    }
+
+    @keyframes material-spinner {
+      0% {
+        transform: rotate(0deg);
+        border-top: 5px #3F51B5 solid;
+      }
+
+      25% {
+        transform: rotate(360deg);
+        border-top: 5px #F44336 solid;
+      }
+
+      50% {
+        transform: rotate(720deg);
+        border-top: 5px #FFC107 solid;
+      }
+
+      75% {
+        transform: rotate(1080deg);
+        border-top: 5px #4CAF50 solid;
+      }
+
+      100% {
+        transform: rotate(1440deg);
+        border-top: 5px #3F51B5 solid;
+      }
+    }
+
+    .loader {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+
+
+  <div id="root">
+    <div class="loader">
+      <div class="material-spinner"></div>
+      Loading...
+    </div>
+  </div>
+</body>
+
+</html>
