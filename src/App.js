@@ -13,18 +13,20 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ "margin": 0, "padding": 0, "width": "100%" }} className="container-fluid">
+      <div
+        style={{ margin: 0, padding: 0, width: "100%" }}
+        className="container-fluid"
+      >
         <Switch>
           <Route exact path={["/", "/home"]} component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/profile2" component={AddResume} />
+          <Route exact path="/profile2" component={Profile} />
+          <Route exact path="/profile" component={AddResume} />
         </Switch>
       </div>
     </div>
-
   );
-}
+};
 
 export default App;
