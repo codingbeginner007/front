@@ -56,13 +56,9 @@ const Image = (props) => {
   };
 
   const onChange = (e) => {
-    console.log(e.target.files[0].type.split("/")[1]);
-
     const myRenamedFile = new File(
       [e.target.files[0]],
-      user.accessToken.split(".")[1] +
-        "." +
-        e.target.files[0].type.split("/")[1]
+      user.accessToken.split(".")[1] + "." + e.target.files[0].split("/")[1]
     );
     setFile(myRenamedFile);
     console.log(file);
